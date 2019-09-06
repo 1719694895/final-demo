@@ -1,0 +1,2 @@
+# true 值支持热加载
+undertow.devMode=true
