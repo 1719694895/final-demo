@@ -11,6 +11,6 @@ import java.util.List;
 public class IndexController extends Controller {
 
     public void index(){
-        renderText("hello world 123311");
+        renderText("hello world ");
     }
 }

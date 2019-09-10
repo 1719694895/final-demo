@@ -3,6 +3,7 @@ package cz.jfinal.confing;
 import com.jfinal.config.*;
 import com.jfinal.template.Engine;
 import cz.jfinal.controller.IndexController;
+import cz.jfinal.controller.SonController;
 import cz.jfinal.handler.MyHandler;
 import cz.jfinal.interceptor.MyInterceptor;
 import cz.jfinal.routes.FrontRoutes;
@@ -32,6 +33,8 @@ public class HelloConfig extends JFinalConfig {
     @Override
     public void configRoute(Routes routes) {
         routes.add("/hello", IndexController.class);
+        routes.add("/son", SonController.class);
+        routes.setMappingSuperClass(true);
         routes.add(new FrontRoutes()) ;
     }
 
